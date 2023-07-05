@@ -14,3 +14,4 @@ My terminal and other dev tools settings
 ## Settings
 
 You can copy my zsh settings from [.zshrc](.zshrc)
+You can copy my vscode settings from [settings.json](settings.json)

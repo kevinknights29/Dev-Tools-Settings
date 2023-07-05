@@ -1,0 +1,33 @@
+{
+    "workbench.colorTheme": "Default Dark Modern",
+    "window.zoomLevel": 1.5,
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.autoFormatStrings": true,
+    "[python]": {
+        "editor.codeActionsOnSave": {
+          "source.fixAll": true
+        }
+      },
+    "python.linting.banditEnabled": true,
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+      "--line-length=80"
+    ],
+    "editor.inlineSuggest.enabled": true,
+    "files.associations": {
+      ".env*": "dotenv"
+    },
+    "editor.tokenColorCustomizations": {
+      "textMateRules": [
+        {
+          "scope": "keyword.other.dotenv",
+          "settings": {
+            "foreground": "#FF000000"
+          }
+        }
+      ]
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "redhat.telemetry.enabled": false,
+    "git.autofetch": true
+}

@@ -72,6 +72,7 @@ ZSH_THEME="cloud"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
     git
+    poetry
     z
     zsh-autosuggestions
     zsh-syntax-highlighting
@@ -107,11 +108,19 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# User PATH
+export PATH="$(python3 -m site --user-base)/bin:"$PATH
+export PATH="/Users/jetbrains/.local/bin:$PATH"
+
 # Aliases
 alias zsh-config="code-insiders ~/.zshrc"
 alias python="python3"
 alias pip="pip3"
 alias zsh-restart="exec $SHELL"
+alias gss="git status --short"
+alias code="code-insiders"
+alias dcd="docker compose down"
+alias dcu="docker compose up -d"
 
 # OhMyPosh
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then

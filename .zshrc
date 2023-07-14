@@ -78,6 +78,8 @@ plugins=(
     zsh-syntax-highlighting
     fast-syntax-highlighting
     zsh-autocomplete
+    copyfile
+    copybuffer
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -121,6 +123,7 @@ alias gss="git status --short"
 alias code="code-insiders"
 alias dcd="docker compose down"
 alias dcu="docker compose up -d"
+alias dcb="docker compose build"
 
 # OhMyPosh
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then

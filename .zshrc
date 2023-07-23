@@ -124,6 +124,9 @@ alias code="code-insiders"
 alias dcd="docker compose down"
 alias dcu="docker compose up -d"
 alias dcb="docker compose build"
+alias brew-sync="brew update && brew upgrade"
+alias venvc="python -m venv .venv"
+alias venva="source .venv/bin/activate"
 
 # OhMyPosh
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then

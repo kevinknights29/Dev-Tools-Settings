@@ -127,7 +127,7 @@ alias dcb="docker compose build"
 
 # OhMyPosh
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
-  eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/my-kali.omp.json)"
+  eval "$(oh-my-posh init zsh --config 'https://raw.githubusercontent.com/kevinknights29/Dev-Tools-Settings/main/my-kali.omp.json')"
 fi
 
 # SSH Agent

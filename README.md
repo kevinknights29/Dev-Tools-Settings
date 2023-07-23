@@ -14,4 +14,20 @@ My terminal and other dev tools settings
 ## Settings
 
 You can copy my zsh settings from [.zshrc](.zshrc)
+
 You can copy my vscode settings from [settings.json](settings.json)
+
+You can copy my vscode extensions from [vs-code-extensions.txt](vs-code-extensions.txt)
+
+Tip: To install vs code extensions through a command line you can run:
+
+```console
+code --install-extension (<extension-id> | <extension-vsix-path>)
+```
+
+Example:
+```console
+code --install-extension ms-python.python
+```
+
+Source: [Command line extension management](https://code.visualstudio.com/docs/editor/extension-marketplace)

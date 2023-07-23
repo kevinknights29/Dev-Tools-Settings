@@ -26,6 +26,7 @@ code --install-extension (<extension-id> | <extension-vsix-path>)
 ```
 
 Example:
+
 ```console
 code --install-extension ms-python.python
 ```

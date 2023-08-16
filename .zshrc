@@ -1,3 +1,5 @@
+# Fig pre block. Keep at the top of this file.
+[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -113,6 +115,7 @@ source $ZSH/oh-my-zsh.sh
 # User PATH
 export PATH="$(python3 -m site --user-base)/bin:"$PATH
 export PATH="/Users/jetbrains/.local/bin:$PATH"
+export PATH=$JAVA_HOME/bin:$PATH
 
 # Aliases
 alias zsh-config="code-insiders ~/.zshrc"
@@ -156,3 +159,16 @@ if [ -f "${SSH_ENV}" ]; then
 else
     start_agent;
 fi
+
+# Pyenv
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+# Spring Boot CLI
+export SPRING_HOME=/usr/local/bin/spring-3.1.2
+export PATH=$SPRING_HOME/bin:$PATH
+
+# Fig post block. Keep at the bottom of this file.
+

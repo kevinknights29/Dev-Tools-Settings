@@ -79,9 +79,9 @@ plugins=(
     zsh-autosuggestions
     zsh-syntax-highlighting
     fast-syntax-highlighting
-    zsh-autocomplete
     copyfile
     copybuffer
+    # zsh-autocomplete
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -161,7 +161,6 @@ else
 fi
 
 # Pyenv
-[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
@@ -172,3 +171,5 @@ export PATH=$SPRING_HOME/bin:$PATH
 
 # Fig post block. Keep at the bottom of this file.
 
+# Fig post block. Keep at the bottom of this file.
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"

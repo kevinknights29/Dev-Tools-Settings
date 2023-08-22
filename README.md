@@ -10,6 +10,7 @@ My terminal and other dev tools settings
 - Theme Manager: Oh My Posh. [Instructions Here](https://ohmyposh.dev/docs/)
   - Theme: [my-kali.omp.json](my-kali.omp.json)
   - Theme: [my-posh-theme.omp.json](my-posh-theme.omp.json)
+- Install Fig [Instructions Here](https://fig.io/user-manual/install)
 
 ## ZSH Extensions Install
 

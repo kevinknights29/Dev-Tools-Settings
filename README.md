@@ -11,6 +11,14 @@ My terminal and other dev tools settings
   - Theme: [my-kali.omp.json](my-kali.omp.json)
   - Theme: [my-posh-theme.omp.json](my-posh-theme.omp.json)
 - Install Fig [Instructions Here](https://fig.io/user-manual/install)
+- Install Homebrew:
+-  `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+
+### Brew install dependencies
+
+```bash
+brew bundle
+```
 
 ## ZSH Extensions Install
 

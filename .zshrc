@@ -165,6 +165,9 @@ export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
+# Pyenv Virtualenv
+eval "$(pyenv virtualenv-init -)"
+
 # Spring Boot CLI
 export SPRING_HOME=/usr/local/bin/spring-3.1.2
 export PATH=$SPRING_HOME/bin:$PATH

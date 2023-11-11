@@ -13,6 +13,26 @@
   "editor.fontSize": 16,
   "editor.inlineSuggest.enabled": true,
   "editor.tokenColorCustomizations": {
+    "[*Light*]": {
+      "textMateRules": [
+        {
+          "scope": "ref.matchtext",
+          "settings": {
+            "foreground": "#000"
+          }
+        }
+      ]
+    },
+    "[*Dark*]": {
+      "textMateRules": [
+        {
+          "scope": "ref.matchtext",
+          "settings": {
+            "foreground": "#fff"
+          }
+        }
+      ]
+    },
     "textMateRules": []
   },
   "files.associations": {
@@ -30,5 +50,11 @@
   "workbench.iconTheme": "material-icon-theme",
   "terminal.integrated.env.osx": {
     "FIG_NEW_SESSION": "1"
-  }
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+  },
+  "editor.formatOnSave": true,
+  "files.autoSave": "onFocusChange"
 }

@@ -20,6 +20,11 @@ My terminal and other dev tools settings
 brew bundle
 ```
 
+To update the `Brewfile` generated with the command above, please run:
+```bash
+rm Brewfile && brew bundle dump
+```
+
 ## ZSH Extensions Install
 
 - ### zsh-autosuggestions

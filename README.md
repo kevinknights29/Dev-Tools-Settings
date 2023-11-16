@@ -98,14 +98,14 @@ Source: [Command line extension management](https://code.visualstudio.com/docs/e
 
 NOTE: If you want to easily copy your updated vscode settings, you can run:
 
-	- For VS Code
+- For VS Code
 
 	```bash
 	cp $HOME/Library/Application\ Support/Code/User/settings.json settings.json
 	```
 
-	- For VS Code - Insiders
-	
+- For VS Code - Insiders
+
 	```bash
 	cp $HOME/Library/Application\ Support/Code\ -\ Insiders/User/settings.json settings.json
 	```

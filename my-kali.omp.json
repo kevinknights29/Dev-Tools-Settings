@@ -13,7 +13,7 @@
             "display_host": true
           },
           "style": "plain",
-          "template": "<{{ if .Root }}lightBlue{{ else }}green{{ end }}>\u250c\u2500\u2500</>({{ .UserName }}{{ if .Root }}💀{{ else }}💁‍♂️{{ end }})</>",
+          "template": "<{{ if .Root }}lightBlue{{ else }}green{{ end }}>\u250c\u2500\u2500</>({{ .UserName }}{{ if .Root }}💀{{ else }}👨🏾‍💻{{ end }})</>",
           "type": "session"
         },
         {

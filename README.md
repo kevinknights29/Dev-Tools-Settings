@@ -1,6 +1,6 @@
 # Dev-Tools-Settings
 
-My terminal and other dev tools settings
+My terminal and other dev tools' settings
 
 ## Setup
 
@@ -12,7 +12,7 @@ My terminal and other dev tools settings
   - Theme: [my-posh-theme.omp.json](my-posh-theme.omp.json)
 - Install Fig [Instructions Here](https://fig.io/user-manual/install)
 - Install Homebrew:
--  `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+  - `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 
 ### Brew install dependencies
 
@@ -21,34 +21,35 @@ brew bundle
 ```
 
 To update the `Brewfile` generated with the command above, please run:
+
 ```bash
 rm Brewfile && brew bundle dump
 ```
 
 ## ZSH Extensions Install
 
-- ### zsh-autosuggestions
+### zsh-autosuggestions
 
-```zsh
+```bash
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
-- ### zsh-syntax-highlighting
+### zsh-syntax-highlighting
 
-```zsh
+```bash
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
 ### fast-syntax-highlighting
 
-```zsh
+```bash
 git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git \
   ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting
 ```
 
 ### zsh-autocomplete
 
-```zsh
+```bash
 git clone https://github.com/marlonrichert/zsh-autocomplete.git \
   ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autocomplete
 ```
@@ -64,7 +65,7 @@ git clone https://github.com/marlonrichert/zsh-autocomplete.git \
 - Java 17 SDK. [Instruction Here](https://www.oracle.com/java/technologies/downloads/)
 - Spring boot CLI.
 
-```zsh
+```bash
 curl -o /usr/local/bin/spring-boot-cli-3.1.2-bin.zip https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-cli/3.1.2/spring-boot-cli-3.1.2-bin.zip
 
 unzip /usr/local/bin/spring-boot-cli-3.1.2-bin.zip -d /usr/local/bin/
@@ -84,13 +85,13 @@ You can copy my vscode extensions from [vs-code-extensions.txt](vs-code-extensio
 
 Tip: To install vs code extensions through a command line you can run:
 
-```console
+```bash
 code --install-extension (<extension-id> | <extension-vsix-path>)
 ```
 
 Example:
 
-```console
+```bash
 code --install-extension ms-python.python
 ```
 
@@ -100,12 +101,12 @@ NOTE: If you want to easily copy your updated vscode settings, you can run:
 
 - For VS Code
 
-	```bash
-	cp $HOME/Library/Application\ Support/Code/User/settings.json settings.json
-	```
+  ```bash
+  cp $HOME/Library/Application\ Support/Code/User/settings.json settings.json
+  ```
 
 - For VS Code - Insiders
 
-	```bash
-	cp $HOME/Library/Application\ Support/Code\ -\ Insiders/User/settings.json settings.json
-	```
+  ```bash
+  cp $HOME/Library/Application\ Support/Code\ -\ Insiders/User/settings.json settings.json
+  ```

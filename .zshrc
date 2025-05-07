@@ -132,9 +132,10 @@ alias dcd="docker compose down"
 alias dcu="docker compose up -d"
 alias dcb="docker compose build"
 alias brew-sync="brew update && brew upgrade"
-alias venvc="python -m venv .venv"
+alias venvc="uv venv"
 alias venva="source .venv/bin/activate"
-alias venvd="deactivate"
+alias venvd="source deactivate"
+alias venvr="uv pip install -r requirements.txt"
 
 # OhMyPosh
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
@@ -185,3 +186,17 @@ if [ -f '/Users/kevinknights/Code/google-cloud-sdk/completion.zsh.inc' ]; then .
 
 # Q post block. Keep at the bottom of this file.
 [[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"
+
+# UV
+. "$HOME/.cargo/env"
+
+# Added by Windsurf
+export PATH="/Users/kevinknights/.codeium/windsurf/bin:$PATH"
+
+# pnpm
+export PNPM_HOME="/Users/kevinknights/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
